@@ -33,15 +33,30 @@ console.log(addItems);
 addItems.style.fontWeight = "900";
 addItems.style.color = "Green";
 
+//Get Element by the Class Name
+
 let item3 = document.getElementsByClassName('list-group-item')[2];
 console.log(item3);
 item3.style.background = "Green";
 
 let allList = document.getElementsByClassName('list-group-item');
 console.log(allList);
-for(let i in allList){
+for(let i = 0; i<allList.length; i++){
     allList[i].style.fontWeight = "900";
 }
+
+
+//Get Element by tag name
+
+let li = document.getElementsByTagName('li');
+console.log(li);
+
+li[4].style.listStyle = "none";
+
+for (let i = 0; i<li.length; i++){
+    li[i].style.color = "darkgrey"
+}
+
 
 
 
