@@ -51,11 +51,49 @@ for(let i = 0; i<allList.length; i++){
 let li = document.getElementsByTagName('li');
 console.log(li);
 
-li[4].style.listStyle = "none";
+// li[4].style.listStyle = "none";
 
 for (let i = 0; i<li.length; i++){
     li[i].style.color = "darkgrey"
 }
+
+
+//Query Sellector 
+let header = document.querySelector('#main-header');
+header.style.borderBottom = 'solid 4px black';
+
+let input = document.querySelector('input');
+input.value = "Type Here";
+
+let submit = document.querySelector('input[type = "submit"]');
+submit.value = "Add";
+
+let secondItem  = document.querySelector('.list-group-item:nth-child(2)');
+secondItem.style.background = "green";
+
+let hiddenEle = document.querySelector('.list-group-item:nth-child(3)');
+// hiddenEle.setAttribute("hidden", true);
+hiddenEle.style.visibility = "hidden";
+
+
+//Query Selector All
+
+let titles = document.querySelectorAll('.title')
+titles[0].textContent = "Add to Cart";
+
+let secondEle = document.querySelectorAll('.list-group-item:nth-child(2)');
+console.log(secondEle);
+secondEle[0].style.color = 'green';
+
+//doing even instead of odd because one odd element is already hidden.
+let even = document.querySelectorAll('li:nth-child(even)');
+
+for(let i = 0; i< even.length; i++){
+    even[i].style.background = "black";
+}
+
+
+
 
 
 
