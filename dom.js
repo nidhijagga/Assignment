@@ -33,4 +33,15 @@ console.log(addItems);
 addItems.style.fontWeight = "900";
 addItems.style.color = "Green";
 
+let item3 = document.getElementsByClassName('list-group-item')[2];
+console.log(item3);
+item3.style.background = "Green";
+
+let allList = document.getElementsByClassName('list-group-item');
+console.log(allList);
+for(let i in allList){
+    allList[i].style.fontWeight = "900";
+}
+
+
 
